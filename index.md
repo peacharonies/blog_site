@@ -31,7 +31,10 @@ title: Home
 	<a href='https://www.peacharonies.com'>Home</a> | <a href='https://blog.peacharonies.com'>Blog</a>
 	<hr />
 	<br />
-	<p>Bloggin' around</p>
+	<p>Bloggin' around, look!</p>
+ 	<ul>
+		<li><a href='/posts/2025-06-19.md'>First Post</a></li>
+	</ul>
 	
 
 </body>
