@@ -15,4 +15,4 @@ paginate: 5
 paginate_path: "/page:num/"
 
 # social links
-github_username: jarkanni
+#github_username: jarkanni
