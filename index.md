@@ -18,6 +18,8 @@ title: Home
 		h2 {margin-top: 0px;
 			font-size: 20px;
 			opacity: 60%;}
+		.social-media-list { font-size: 13px; }
+		.username { font-size: 13px !important; }
 	</style>
 </head>
 
@@ -29,4 +31,3 @@ title: Home
     <p>{{ post.date | date: "%B %d, %Y at %I:%M %p" }}</p>
     <p>{{ post.content | truncatewords: 13 }}</p>
 {% endfor %}
-
