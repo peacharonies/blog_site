@@ -108,3 +108,38 @@ code {
   background-color: var(--text-color);
   color: var(--bg-color);
 }
+
+
+/* Fix navigation colors for dark mode */
+.site-header {
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-title, 
+.site-title:visited {
+  color: var(--text-color) !important;
+}
+
+.site-nav .page-link {
+  color: var(--text-color) !important;
+  font-size: 13px; /* Your 13px easter egg */
+}
+
+.site-nav .page-link:hover {
+  color: var(--link-color) !important;
+}
+
+/* Mobile menu styling */
+.site-nav .trigger {
+  background-color: var(--bg-color);
+}
+
+.site-nav input ~ .trigger {
+  background-color: var(--bg-color);
+}
+
+/* Menu icon for mobile */
+.site-nav .menu-icon > svg path {
+  fill: var(--text-color);
+}
