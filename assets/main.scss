@@ -49,3 +49,62 @@
 .site-nav .page-link {
   font-size: 13px;
 }
+
+
+/* CSS Variables for theming */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --link-color: #2a7ae4;
+  --border-color: #e1e1e1;
+  --code-bg: #f8f8f8;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #e1e1e1;
+  --link-color: #64b5f6;
+  --border-color: #333333;
+  --code-bg: #2d2d2d;
+}
+
+/* Apply variables to elements */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--link-color);
+}
+
+code {
+  background-color: var(--code-bg);
+}
+
+.post-nav {
+  border-color: var(--border-color);
+}
+
+/* Your existing 13px styling */
+.social-media-list, .username {
+  font-size: 13px !important;
+}
+
+/* Dark mode toggle button */
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px; /* Another 13 easter egg! */
+  margin-left: 10px;
+}
+
+.theme-toggle:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
