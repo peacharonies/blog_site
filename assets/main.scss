@@ -3,8 +3,28 @@
 
 @import "minima";
 
-/* CSS Variables for theming */
+/* CSS Variables - Default to system preference */
 :root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --link-color: #2a7ae4;
+  --border-color: #e1e1e1;
+  --code-bg: #f8f8f8;
+}
+
+/* Automatic dark mode based on system preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1a1a1a;
+    --text-color: #e1e1e1;
+    --link-color: #64b5f6;
+    --border-color: #333333;
+    --code-bg: #2d2d2d;
+  }
+}
+
+/* Manual overrides (when user clicks toggle) */
+[data-theme="light"] {
   --bg-color: #ffffff;
   --text-color: #333333;
   --link-color: #2a7ae4;
