@@ -14,9 +14,5 @@ plugins:
 paginate: 5
 paginate_path: "/page:num/"
 
-# custom navigation
-navigation:
-  - title: Home
-    url: /
-  - title: GitHub
-    url: https://github.com/jarkanni
+# social links
+github_username: jarkanni
