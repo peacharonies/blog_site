@@ -22,20 +22,15 @@ title: Home
 </head>
 
 <body>
-	<h1>Peacharonies
-		<h2>The Peachy Observer</h2>
-	</h1>
-	<hr />
-	<a href='/'>Home</a> | <a href='https://blog.peacharonies.com'>Blog</a>
-	<hr />
-	<br />
-	{% for post in site.posts %}
+
+ 
+{% for post in site.posts %}
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p>{{ post.date | date: "%B %d, %Y" }}</p>
     <p>{{ post.excerpt }}</p>
 {% endfor %}
-	
 
+ 
 </body>
 
 </html>
