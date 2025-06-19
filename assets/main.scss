@@ -3,54 +3,6 @@
 
 @import "minima";
 
-/* 13px GitHub username everywhere */
-.social-media-list { 
-  font-size: 13px; 
-}
-
-.social-media-list a,
-.username,
-.site-footer .username,
-.site-footer .social-media-list,
-.site-footer .social-media-list a {
-  font-size: 13px !important;
-}
-
-/* Extra coverage for post pages */
-.post .social-media-list,
-.post .username {
-  font-size: 13px !important;
-}
-
-/* Catch any other instances */
-* .social-media-list,
-* .username {
-  font-size: 13px !important;
-}
-
-
-/* Previous/Next post navigation */
-.post-nav {
-  margin-top: 30px;
-}
-
-.post-nav a {
-  font-size: 13px; /* Another 13 easter egg! */
-  text-decoration: none;
-  color: #666;
-}
-
-.post-nav a:hover {
-  color: #333;
-  text-decoration: underline;
-}
-
-/* Style the top navigation GitHub link */
-.site-nav .page-link {
-  font-size: 13px;
-}
-
-
 /* CSS Variables for theming */
 :root {
   --bg-color: #ffffff;
@@ -75,6 +27,39 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Fix navigation colors for dark mode */
+.site-header {
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-title, 
+.site-title:visited {
+  color: var(--text-color) !important;
+}
+
+.site-nav .page-link {
+  color: var(--text-color) !important;
+  font-size: 13px;
+}
+
+.site-nav .page-link:hover {
+  color: var(--link-color) !important;
+}
+
+.site-nav .trigger {
+  background-color: var(--bg-color);
+}
+
+.site-nav input ~ .trigger {
+  background-color: var(--bg-color);
+}
+
+.site-nav .menu-icon > svg path {
+  fill: var(--text-color);
+}
+
+/* Other elements */
 a {
   color: var(--link-color);
 }
@@ -100,46 +85,11 @@ code {
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 4px;
-  font-size: 13px; /* Another 13 easter egg! */
+  font-size: 13px;
   margin-left: 10px;
 }
 
 .theme-toggle:hover {
   background-color: var(--text-color);
   color: var(--bg-color);
-}
-
-
-/* Fix navigation colors for dark mode */
-.site-header {
-  background-color: var(--bg-color);
-  border-bottom: 1px solid var(--border-color);
-}
-
-.site-title, 
-.site-title:visited {
-  color: var(--text-color) !important;
-}
-
-.site-nav .page-link {
-  color: var(--text-color) !important;
-  font-size: 13px; /* Your 13px easter egg */
-}
-
-.site-nav .page-link:hover {
-  color: var(--link-color) !important;
-}
-
-/* Mobile menu styling */
-.site-nav .trigger {
-  background-color: var(--bg-color);
-}
-
-.site-nav input ~ .trigger {
-  background-color: var(--bg-color);
-}
-
-/* Menu icon for mobile */
-.site-nav .menu-icon > svg path {
-  fill: var(--text-color);
 }
