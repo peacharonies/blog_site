@@ -4,11 +4,6 @@ description: Even small steps lead to many miles
 url: "https://blog.peacharonies.com"
 baseurl: ""
 
-# navigation pages
-header_pages:
-  - about.md
-  - projects.md
-
 # build settings
 markdown: kramdown
 theme: minima
