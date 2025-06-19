@@ -28,7 +28,7 @@ title: Home
 		<h2>The Peachy Observer</h2>
 	</h1>
 	<hr />
-	<a href='https://www.peacharonies.com'>Home</a> | <a href='https://blog.peacharonies.com'>Blog</a>
+	<a href='/'>Home</a> | <a href='https://blog.peacharonies.com'>Blog</a>
 	<hr />
 	<br />
 	{% for post in site.posts %}
