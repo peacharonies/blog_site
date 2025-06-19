@@ -30,7 +30,3 @@ title: Home
     <p>{{ post.content | truncatewords: 13 }}</p>
 {% endfor %}
 
- 
-</body>
-
-</html>
