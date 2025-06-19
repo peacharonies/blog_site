@@ -8,7 +8,7 @@ date: 2025-06-19
 
 My wife's beautiful base has two main buildings: Player House and Villager House.  Here's what I see standing in front of my own base:
 
-![heather_base.png](/images/heather_base.png)
+![heather_base.png](/images/2025-06/heather_base.png)
 
 I love the slopes of the roofs, so smooth!  She does such a great job with the color palettes and details.  Amazing what sorts of details she can add to really spruce up the place.  What I love most is Roy is copying her and even adding his own texture in walls now!!!  Incredible to see him grow; has a great teacher, that's for sure!
 
