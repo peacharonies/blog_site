@@ -8,4 +8,6 @@ title: Home
   <p>{{ post.date | date: "%B %d, %Y at %I:%M %p" }}</p>
   <p>{{ post.excerpt | strip_html | truncatewords: 13 }}</p>
   <hr>
+  <br>
+  <br>
 {% endfor %}
