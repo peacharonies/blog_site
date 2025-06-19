@@ -4,7 +4,6 @@ title: "Heather's Base from afar"
 date: 2025-06-19 02:44:00
 ---
 
-## Heather's Base
 
 My wife's beautiful base has two main buildings: Player House and Villager House.  Here's what I see standing in front of my own base:
 
