@@ -3,29 +3,6 @@ layout: default
 title: Home
 ---
 
-<html lang='en'>
-
-<head>
-	<meta charset='UTF-8'>
-	<meta name='viewport' content='width=device-width, initial-scale=1' user-scalable='yes'>
-	<title>Peacharonies: Blog</title>
-	<style>
-		body {padding: 0px 30px}
-		ul {list-style-type: none;}
-		li {white-space: pre-line;
-			font-size: 25px;}
-		h1 {margin-bottom: 0px;}		
-		h2 {margin-top: 0px;
-			font-size: 20px;
-			opacity: 60%;}
-		.social-media-list { font-size: 13px; }
-		.username { font-size: 13px !important; }
-	</style>
-</head>
-
-<body>
-
- 
 {% for post in site.posts %}
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
     <p>{{ post.date | date: "%B %d, %Y at %I:%M %p" }}</p>
