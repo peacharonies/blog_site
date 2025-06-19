@@ -31,10 +31,11 @@ title: Home
 	<a href='https://www.peacharonies.com'>Home</a> | <a href='https://blog.peacharonies.com'>Blog</a>
 	<hr />
 	<br />
-	<p>Bloggin' around, look!</p>
- 	<ul>
-		<li><a href='/posts/2025-06-19.md'>First Post</a></li>
-	</ul>
+	{% for post in site.posts %}
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p>{{ post.date | date: "%B %d, %Y" }}</p>
+    <p>{{ post.excerpt }}</p>
+{% endfor %}
 	
 
 </body>
