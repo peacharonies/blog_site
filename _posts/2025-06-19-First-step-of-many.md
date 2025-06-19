@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "First step of many"
-date: 6.19.25
+date: 2025-06-19
 ---
 
 # First step of many
