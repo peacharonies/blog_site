@@ -17,5 +17,22 @@ layout: default
     {{ content }}
   </div>
 
+  <!-- Previous/Next Post Navigation -->
+  <nav class="post-nav">
+    <hr>
+    <div style="display: flex; justify-content: space-between; margin: 20px 0;">
+      <div>
+        {% if page.previous.url %}
+          <a href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a>
+        {% endif %}
+      </div>
+      <div style="text-align: right;">
+        {% if page.next.url %}
+          <a href="{{ page.next.url }}">{{ page.next.title }} &rarr;</a>
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
