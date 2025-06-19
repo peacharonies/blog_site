@@ -25,7 +25,7 @@ title: Home
 
  
 {% for post in site.posts %}
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
     <p>{{ post.date | date: "%B %d, %Y at %I:%M %p" }}</p>
     <p>{{ post.content | truncatewords: 13 }}</p>
 {% endfor %}
