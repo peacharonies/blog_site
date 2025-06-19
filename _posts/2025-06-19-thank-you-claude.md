@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Thank you, Claude"
-date: 2025-06-19 01:56:00 AM
+date: 2025-06-19 01:56:00
 ---
 
 ## Claude's Impressive!
