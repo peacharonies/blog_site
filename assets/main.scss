@@ -1,0 +1,38 @@
+---
+---
+
+body {padding: 0px 30px}
+ul {list-style-type: none;}
+li {white-space: pre-line;
+  font-size: 25px;}
+h1 {margin-bottom: 0px;}		
+h2 {margin-top: 0px;
+  font-size: 20px;
+  opacity: 60%;}
+
+@import "minima";
+
+/* 13px GitHub username everywhere */
+.social-media-list { 
+  font-size: 13px; 
+}
+
+.social-media-list a,
+.username,
+.site-footer .username,
+.site-footer .social-media-list,
+.site-footer .social-media-list a {
+  font-size: 13px !important;
+}
+
+/* Extra coverage for post pages */
+.post .social-media-list,
+.post .username {
+  font-size: 13px !important;
+}
+
+/* Catch any other instances */
+* .social-media-list,
+* .username {
+  font-size: 13px !important;
+}
