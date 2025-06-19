@@ -4,13 +4,6 @@ description: Even small steps lead to many miles
 url: "https://blog.peacharonies.com"
 baseurl: ""
 
-# custom navigation
-navigation:
-  - title: Home
-    url: /
-  - title: GitHub
-    url: https://github.com/jarkanni
-
 # build settings
 markdown: kramdown
 theme: minima
@@ -20,3 +13,10 @@ plugins:
 # pagination
 paginate: 5
 paginate_path: "/page:num/"
+
+# custom navigation
+navigation:
+  - title: Home
+    url: /
+  - title: GitHub
+    url: https://github.com/jarkanni
