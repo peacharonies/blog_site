@@ -5,7 +5,7 @@ title: Home
 
 # The Peachy Observer
 
-**Links:** [GitHub](https://github.com/jarkanni) | [Minecraft Server](https://yellowcake.peacharonies.com)
+**Links:** [GitHub](https://github.com/jarkanni)
 
 ---
 
