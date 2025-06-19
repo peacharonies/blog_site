@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "First step of many"
-date: 2025-06-19 01:34:00 AM
+date: 2025-06-19 01:34:00
 ---
 
 ## The Journey Begins...
