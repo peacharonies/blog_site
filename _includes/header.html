@@ -17,26 +17,54 @@
 function toggleTheme() {
   const html = document.documentElement;
   const button = document.querySelector('.theme-toggle');
+  const currentTheme = html.getAttribute('data-theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   
-  if (html.getAttribute('data-theme') === 'dark') {
-    html.removeAttribute('data-theme');
+  if (currentTheme === 'dark') {
+    // Switch to light mode
+    html.setAttribute('data-theme', 'light');
     button.textContent = '🌙';
     localStorage.setItem('theme', 'light');
+  } else if (currentTheme === 'light') {
+    // Switch to system default
+    html.removeAttribute('data-theme');
+    button.textContent = systemPrefersDark ? '☀️' : '🌙';
+    localStorage.removeItem('theme');
   } else {
-    html.setAttribute('data-theme', 'dark');
-    button.textContent = '☀️';
-    localStorage.setItem('theme', 'dark');
+    // Currently using system default, switch to opposite
+    if (systemPrefersDark) {
+      html.setAttribute('data-theme', 'light');
+      button.textContent = '🌙';
+      localStorage.setItem('theme', 'light');
+    } else {
+      html.setAttribute('data-theme', 'dark');
+      button.textContent = '☀️';
+      localStorage.setItem('theme', 'dark');
+    }
   }
 }
 
-// Load saved theme
+// Initialize theme on page load
 document.addEventListener('DOMContentLoaded', function() {
   const savedTheme = localStorage.getItem('theme');
   const button = document.querySelector('.theme-toggle');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   
-  if (savedTheme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    button.textContent = '☀️';
+  if (savedTheme) {
+    // User has manually set a preference
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    button.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+  } else {
+    // Use system preference
+    button.textContent = systemPrefersDark ? '☀️' : '🌙';
   }
+  
+  // Listen for system theme changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+    if (!localStorage.getItem('theme')) {
+      // Only update if user hasn't manually set a preference
+      button.textContent = e.matches ? '☀️' : '🌙';
+    }
+  });
 });
 </script>
