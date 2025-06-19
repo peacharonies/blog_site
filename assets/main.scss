@@ -27,3 +27,22 @@
 * .username {
   font-size: 13px !important;
 }
+
+
+/* Previous/Next post navigation */
+.post-nav {
+  margin-top: 30px;
+}
+
+.post-nav a {
+  font-size: 13px; /* Another 13 easter egg! */
+  text-decoration: none;
+  color: #666;
+}
+
+.post-nav a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+
